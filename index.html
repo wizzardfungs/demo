@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Developer | Portfolio</title>
+
+    <!-- Font (modern + readable) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- Header / Nav -->
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="logo" href="#top">AD</a>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+            Menu
+          </button>
+
+          <ul class="nav__list" id="navMenu">
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#skills">Skills</a></li>
+            <li><a class="nav__link" href="#projects">Projects</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="section hero">
+        <div class="container hero__inner">
+          <p class="hero__eyebrow">Hi, I’m</p>
+          <h1 class="hero__title">Alex Developer</h1>
+          <p class="hero__subtitle">Beginner Web Developer • Learning by building</p>
+
+          <div class="hero__cta">
+            <a class="button button--primary" href="#projects">View Projects</a>
+            <a class="button button--ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="hero__meta">
+            <span class="badge">Open to learning</span>
+            <span class="badge">Building daily</span>
+            <span class="badge">Beginner-friendly portfolio</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container">
+          <h2 class="section__title">About Me</h2>
+          <p class="section__lead">
+            I’m a beginner developer who’s motivated to learn web development and build real skills.
+            I’m currently focusing on HTML, CSS, and JavaScript fundamentals—one small project at a
+            time.
+          </p>
+
+          <div class="card">
+            <h3 class="card__title">What I’m working on</h3>
+            <ul class="list">
+              <li>Writing clean, semantic HTML</li>
+              <li>Responsive layouts with modern CSS</li>
+              <li>Basic JavaScript for interactivity</li>
+              <li>Using GitHub to track progress</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="container">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__lead">A few tools and topics I’m currently learning and practicing:</p>
+
+          <div class="grid grid--skills">
+            <div class="card">
+              <h3 class="card__title">HTML</h3>
+              <p class="card__text">Semantic structure, forms, accessibility basics.</p>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">CSS</h3>
+              <p class="card__text">Flexbox, Grid, responsive design, clean UI.</p>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">GitHub</h3>
+              <p class="card__text">Repositories, commits, README files, simple workflows.</p>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">Python (Basics)</h3>
+              <p class="card__text">Variables, loops, functions, beginner problem-solving.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__lead">
+            These are placeholder projects while I build real ones. I’m focused on learning and
+            improving with each build.
+          </p>
+
+          <div class="grid grid--projects">
+            <!-- Project 1 -->
+            <article class="card project">
+              <div class="project__top">
+                <h3 class="card__title">Simple Landing Page</h3>
+                <p class="project__tag">HTML • CSS</p>
+              </div>
+              <p class="card__text">
+                A clean landing page layout with a hero section, features, and a call-to-action.
+              </p>
+              <div class="project__links">
+                <a class="link" href="#" aria-disabled="true">Live Demo</a>
+                <a class="link" href="#" aria-disabled="true">Source Code</a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="card project">
+              <div class="project__top">
+                <h3 class="card__title">To-Do List UI</h3>
+                <p class="project__tag">HTML • CSS • JS</p>
+              </div>
+              <p class="card__text">
+                A basic to-do interface (add/remove items) to practice JavaScript and DOM updates.
+              </p>
+              <div class="project__links">
+                <a class="link" href="#" aria-disabled="true">Live Demo</a>
+                <a class="link" href="#" aria-disabled="true">Source Code</a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="card project">
+              <div class="project__top">
+                <h3 class="card__title">Portfolio Template</h3>
+                <p class="project__tag">Responsive Design</p>
+              </div>
+              <p class="card__text">
+                A simple portfolio layout (like this one) to practice typography, spacing, and
+                sections.
+              </p>
+              <div class="project__links">
+                <a class="link" href="#" aria-disabled="true">Live Demo</a>
+                <a class="link" href="#" aria-disabled="true">Source Code</a>
+              </div>
+            </article>
+          </div>
+
+          <p class="note">
+            Tip: Replace these with your real projects later. Even small projects count (calculator,
+            quiz app, small landing page, etc.).
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__lead">
+            Want to connect or give feedback? Send me a message. (This form is front-end only for now.)
+          </p>
+
+          <div class="grid grid--contact">
+            <form class="card form" id="contactForm">
+              <div class="form__row">
+                <label class="form__label" for="name">Name</label>
+                <input class="form__input" type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+
+              <div class="form__row">
+                <label class="form__label" for="email">Email</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form__row">
+                <label class="form__label" for="message">Message</label>
+                <textarea
+                  class="form__input form__textarea"
+                  id="message"
+                  name="message"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <button class="button button--primary" type="submit">Send Message</button>
+              <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+
+            <aside class="card contact-card">
+              <h3 class="card__title">More ways</h3>
+              <p class="card__text">
+                Add your real links when you’re ready.
+              </p>
+
+              <ul class="list">
+                <li><span class="muted">Email:</span> yourname@email.com</li>
+                <li><span class="muted">GitHub:</span> github.com/yourusername</li>
+                <li><span class="muted">Location:</span> Your City</li>
+              </ul>
+
+              <a class="button button--ghost" href="#top">Back to top</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__text">© <span id="year"></span> Alex Developer. Built with HTML, CSS, and JavaScript.</p>
+      </div>
+    </footer>
+  </body>
+</html>
